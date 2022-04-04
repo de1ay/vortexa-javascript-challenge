@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import { CssBaseline, ThemeProvider } from '@mui/material';
+
+import rootStore from './store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import LightTheme from './assets/themes/LightTheme';
@@ -13,9 +16,11 @@ if (rootElement) {
     <React.StrictMode>
       <CssBaseline />
       <BrowserRouter>
-        <ThemeProvider theme={LightTheme}>
-          <App />
-        </ThemeProvider>
+        <Provider store={rootStore}>
+          <ThemeProvider theme={LightTheme}>
+            <App />
+          </ThemeProvider>
+        </Provider>
       </BrowserRouter>
     </React.StrictMode>,
   );

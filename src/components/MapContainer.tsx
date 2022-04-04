@@ -21,6 +21,7 @@ const MapContainer: React.FC<Props> = ({ children, mapProps }) => {
     <div className={styles.map_container}>
       {isMounted && (
         <Map
+          id="map"
           reuseMaps
           mapLib={maplibregl}
           mapStyle="https://api.maptiler.com/maps/hybrid/style.json?key=7hzYrk9ZUrvMzSoKcYfC"

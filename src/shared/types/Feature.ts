@@ -1,10 +1,6 @@
+import { Feature as FeatureG, Geometry } from 'geojson';
 import FeatureProperties from './FeatureProperties';
 
-type Feature = {
-  type: string;
-  id: string;
-  geometry_name: string;
-  properties: FeatureProperties;
-};
+type Feature = FeatureG<Geometry, FeatureProperties>;
 
 export default Feature;

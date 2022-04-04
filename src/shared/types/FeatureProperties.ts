@@ -1,6 +1,9 @@
+import { Position } from 'geojson';
+
 type FeatureProperties = {
   material: string;
-  area: number;
+  area_: number;
+  centroid: Position;
   // omit other fields for now
 };
 
