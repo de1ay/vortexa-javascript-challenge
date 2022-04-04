@@ -9,9 +9,9 @@
 
 ## Built with
 - [react](https://reactjs.org/)
-- [redux](https://redux.js.org/), [ReduxToolkit](https://redux-toolkit.js.org/)
+- [redux](https://redux.js.org/), [reduxToolkit](https://redux-toolkit.js.org/)
 - [react-router](https://reactrouter.com/)
-- [react-Map-gl](http://visgl.github.io/react-map-gl/)
+- [react-map-gl](http://visgl.github.io/react-map-gl/)
 - [react-vis](https://uber.github.io/react-vis/)
 - [MUI](https://mui.com/)
 - [TypeScript](https://www.typescriptlang.org/)

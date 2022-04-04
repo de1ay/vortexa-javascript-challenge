@@ -25,7 +25,7 @@ const BoatRamps = () => {
     setMapBounds(e.target.getBounds());
   };
 
-  const processedBoatRamps: ProcessedBoatRamps = useMemo(() => {
+  const processedBoatRamps = useMemo<ProcessedBoatRamps>(() => {
     if (!data) {
       return {
         boatRampsByMaterial: [],
@@ -40,11 +40,12 @@ const BoatRamps = () => {
     return [
       {
         data: processedBoatRamps.boatRampsByMaterial,
-        onValueClick: (val) => setFilters({ constructionMaterial: val.x.toString() }),
+        onValueClick: (val) => setFilters((prevState) => ({ ...prevState, constructionMaterial: val.x.toString() })),
       },
       {
         data: processedBoatRamps.boatRampsBySizeCategory,
-        onValueClick: (val) => setFilters({ sizeCategory: val.x as BoatRampSizeCategory }),
+        onValueClick: (val) =>
+          setFilters((prevState) => ({ ...prevState, sizeCategory: val.x as BoatRampSizeCategory })),
       },
     ];
   }, [processedBoatRamps]);

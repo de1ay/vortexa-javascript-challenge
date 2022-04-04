@@ -1,7 +1,6 @@
 import React, { ComponentPropsWithoutRef } from 'react';
 import { List } from '@mui/material';
 
-import Logo from '../../assets/icons/logo_light.svg';
 import NavigationLink from './NavigationLink';
 
 const Navigation = () => {
