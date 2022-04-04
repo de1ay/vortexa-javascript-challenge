@@ -27,6 +27,7 @@
 
 ## What I would do next
 - Finding the centroid of the MultiPolygons
+- Use Layer component to render markers
 - Add unit tests
 - Add path aliases
 - Proper error handling (e.g. `Error Boundaries`, `try/catch` on requests)
