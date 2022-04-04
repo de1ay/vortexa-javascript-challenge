@@ -35,6 +35,7 @@
 - Solve the problem with lazy loading of the `/boat_ramps` path
 - Responsive layout
 - Navigation Bar redesign
+- Add Dockerfile and CI/CD
 - etc.
 
 ## Notes
