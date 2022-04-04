@@ -2,14 +2,14 @@ import React, { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Layout from './components/layout/Layout';
-import './App.css';
+import BoatRamps from './modules/boat_ramps/BoatRamps';
+import styles from './App.module.css';
 
 const Home = lazy(() => import('./modules/home/Home'));
-const BoatRamps = lazy(() => import('./modules/boat_ramps/BoatRamps'));
 
 const App = () => {
   return (
-    <div className="App">
+    <div className={styles.app}>
       <Layout>
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>

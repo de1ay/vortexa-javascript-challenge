@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import CssBaseline from '@mui/material/CssBaseline';
-import './index.css';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import LightTheme from './assets/themes/LightTheme';
 
 const rootElement = document.getElementById('root');
 
@@ -13,7 +13,9 @@ if (rootElement) {
     <React.StrictMode>
       <CssBaseline />
       <BrowserRouter>
-        <App />
+        <ThemeProvider theme={LightTheme}>
+          <App />
+        </ThemeProvider>
       </BrowserRouter>
     </React.StrictMode>,
   );
