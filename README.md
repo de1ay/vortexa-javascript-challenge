@@ -1,46 +1,42 @@
-# Getting Started with Create React App
+# Javascript Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How to run
 
-## Available Scripts
+- Clone repo
+- Install node modules with `--force` flag because some libs aren't updated to React v18.0
+- Run with `npm run start`
+- Open http://localhost:3000
 
-In the project directory, you can run:
+## Built with
+- [react](https://reactjs.org/)
+- [redux](https://redux.js.org/), [ReduxToolkit](https://redux-toolkit.js.org/)
+- [react-router](https://reactrouter.com/)
+- [react-Map-gl](http://visgl.github.io/react-map-gl/)
+- [react-vis](https://uber.github.io/react-vis/)
+- [MUI](https://mui.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [CreateReactApp](https://create-react-app.dev/)
 
-### `npm start`
+## Requirements
+- [x] Fetch data from the [URL](https://raw.githubusercontent.com/JRGranell/javascript-challenge/master/data/boat_ramps.geojson)
+- [x] A map to be able to visualise all the boat ramps.
+- [x] A data visualisation (e.g. a bar chart) of your choice that displays the number or ramps per construction material.
+- [x] A data visualisation of your choice that displays the number of ramps per size category (values of `area` in 3 different ranges: `[0, 50)`, `[50, 200)`, and `[200, 526)`).
+- [x] Zooming in the map should filter the visualised data to include only those ramps which are currently visible in the viewport.
+- [x] Clicking on a data point on a visualisation should filter the ramps on the map to reflect the selected data.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## What I would do next
+- Finding the centroid of the MultiPolygons
+- Add unit tests
+- Add path aliases
+- Proper error handling (e.g. `Error Boundaries`, `try/catch` on requests)
+- User feedback (e.g. loading/progress inicators, alerts)
+- Boat Ramps page: enable/disable visualisations<->map data binding, filters reset, custom diagrams (created by user)
+- Solve the problem with lazy loading of the `/boat_ramps` path
+- Responsive layout
+- Navigation Bar redesign
+- etc.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Notes
+Approximate time spent: 12 hours
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
